@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Back Office</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="backoffice.html">Back Office</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Gestione Prodotti</h1>
+
+    <section id="product-form">
+      <h2>Aggiungi o Modifica Prodotto</h2>
+      <form id="new-product-form">
+        <label for="product-name">Nome prodotto:</label>
+        <input type="text" id="product-name" required>
+        
+        <label for="product-description">Descrizione:</label>
+        <textarea id="product-description" required></textarea>
+        
+        <label for="product-price">Prezzo:</label>
+        <input type="number" id="product-price" required>
+        
+        <label for="product-image">URL Immagine:</label>
+        <input type="text" id="product-image" required>
+
+        <label for="product-brand">Brand:</label>
+        <input type="text" id="product-brand" required>
+
+        <button type="submit">Aggiungi Prodotto</button>
+      </form>
+    </section>
+
+    <section id="product-list">
+      <h2>Lista Prodotti</h2>
+      <ul id="product-list-ul">
+        
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Fake E-commerce</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
